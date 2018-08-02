@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1">
+    <title>Escape Room Command Center</title>
+	<!-- <link rel="stylesheet" href="roomStyleSheet.css" type="text/css"> -->
+	<script src="roomScript.js"></script>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		/* Create three equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 10px;
+			height: 300px; /* Should be removed. Only for demonstration */
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	</style>
+  </head>
+  
+  
+   <body onLoad="show('part0','part1'); hide('part2'); hide(answer1); hide(answer2); hide(answer3);">
+	<!--<div class="display"><input type="text" readonly size="18" id="d"></div> !-->
+	
+	<div id="part0">
+		<h1 align="center" onclick="show('part1', 'part2');checkPart1();">Welcome to Walt Disney Animation Studios!</h1>
+		
+	</div>
+	
+	<div id ="part1">
+		<div class = "row" id ="clue1">
+			<div class="column">
+				<h1 id="answer1" align="center">2</h1>
+				<p align="center" onclick="show('answer1', 'part2')">____________________</p>
+				<center><img src="bucket.gif" width="30%" height="30%"></img></center>
+			</div>
+			<div class="column">
+				<h1 id="answer2" align="center">10/6</h1>
+				<p align="center" onclick="show('answer2', 'part2')">____________________</p>
+				<center><img src="Top-hat-White.svg" width="50%" height="50%"></img></center>
+			</div>
+			<div class="column">
+				<h1 id="answer3" align="center">7</h1>
+				<p align="center" onclick="show('answer3', 'part2')">____________________</p>
+				<center><img src="flag.png" width="50%" height="50%"></img></center>
+			</div>
+		</div>
+		<div class = "row">
+				<h1 id="answer4" align="center">Supercalifragilisticexpialidocious</h1>
+				<p align="center" onclick="show('answer4', 'part2')">____________________________________________________________________________</p>
+				<h2 align="center">A Magic Word</h2>
+		</div>
+	</div>
+	
+	<div id="part2">
+		<div class = "row" id ="clue2">
+			<div class="column">
+				<h1 id="answer5" align="center">T</h1>
+				<p align="center" onclick="show('answer5', 'part1')">____________________</p>
+			</div>
+			<div class="column">
+				<h1 id="answer6" align="center">H</h1>
+				<p align="center" onclick="show('answer6', 'part1')">____________________</p>
+			</div>
+			<div class="column">
+				<h1 id="answer7" align="center">E</h1>
+				<p align="center" onclick="show('answer7', 'part1')">____________________</p>
+			</div>
+			<div class="column">
+				<h1 id="answer8" align="center">E</h1>
+				<p align="center" onclick="show('answer8', 'part1')">____________________</p>
+			</div>
+			<div class="column">
+				<h1 id="answer9" align="center">N</h1>
+				<p align="center" onclick="show('answer9', 'part1')">____________________</p>
+			</div>
+			<div class="column">
+				<h1 id="answer10" align="center">D</h1>
+				<p align="center" onclick="show('answer10', 'part1')">____________________</p>
+			</div>
+		</div>
+	</div>
+	
+  </body>
+  
+  
+</html>
